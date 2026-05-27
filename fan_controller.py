@@ -23,3 +23,16 @@ class Fan:
         
     def get_on(self):
         return self.__on
+    
+    # Part 4: Ito naman yung setters natin. Para kung gusto natin baguhin yung speed o kulay, dadaan muna dito, safe ang data modification natin.
+    def set_speed(self, fan_speed):
+        self.__speed = fan_speed
+        
+    def set_radius(self, fan_radius):
+        self.__radius = float(fan_radius)
+        
+    def set_color(self, fan_color):
+        self.__color = fan_color
+        
+    def set_on(self, fan_power_status):
+        self.__on = fan_power_status
