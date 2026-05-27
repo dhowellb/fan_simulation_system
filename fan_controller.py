@@ -36,3 +36,13 @@ class Fan:
         
     def set_on(self, fan_power_status):
         self.__on = fan_power_status
+
+    # Part 5: Dito ko nilagay yung funny dashboard natin. Print statements na may konting sass para hindi boring yung terminal output natin mamaya kapag ni-run na.
+    def display_fan_dashboard(self, fan_personality):
+        power_state_message = "🟢 ON (Prepare to be blown away!)" if self.__on else "🔴 OFF (Just collecting dust...)"
+        print(f"==== 🌬️ {fan_personality.upper()} DASHBOARD ====")
+        print(f"| Life Status  : {power_state_message}")
+        print(f"| Velocity     : Level {self.__speed} (1=Breeze, 3=Tornado)")
+        print(f"| Aesthetics   : {self.__color.capitalize()} (Very fashionable)")
+        print(f"| Girth/Radius : {self.__radius} inches of pure wind power")
+        print("==================================================\n")
