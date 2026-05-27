@@ -10,3 +10,16 @@ class Fan:
         self.__radius = float(fan_radius)
         self.__color = fan_color
         self.__on = fan_power_status
+    
+    # Part 3: Gumawa ako ng getters. Kasi nga naka-private yung variables natin, kailangan natin ng paraan para masilip sila sa labas nang hindi nasisira yung rules ng OOP.
+    def get_speed(self):
+        return self.__speed
+        
+    def get_radius(self):
+        return self.__radius
+        
+    def get_color(self):
+        return self.__color
+        
+    def get_on(self):
+        return self.__on
