@@ -56,3 +56,17 @@ def test_fan_program():
     hurricane_mode_fan.set_radius(10.0)
     hurricane_mode_fan.set_color("yellow")
     hurricane_mode_fan.set_on(True)
+
+    # Part 7: Last part! Ginawa ko na yung sad blue desk fan na nakapatay, pinakita ko yung dashboards nila, tapos tinawag ko na yung main block para mag-run yung buong script.
+    sad_desk_fan = Fan()
+    sad_desk_fan.set_speed(Fan.MEDIUM)
+    sad_desk_fan.set_radius(5.0)
+    sad_desk_fan.set_color("blue")
+    sad_desk_fan.set_on(False)
+    
+    hurricane_mode_fan.display_fan_dashboard("The Yellow Tornado")
+    sad_desk_fan.display_fan_dashboard("The Depressed Blue Fan")
+    
+
+if __name__ == "__main__":
+    test_fan_program()
