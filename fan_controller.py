@@ -46,3 +46,13 @@ class Fan:
         print(f"| Aesthetics   : {self.__color.capitalize()} (Very fashionable)")
         print(f"| Girth/Radius : {self.__radius} inches of pure wind power")
         print("==================================================\n")
+
+    # Part 6: Simulan na natin i-test. Ginawa ko muna yung first object natin, yung yellow na fan na naka-max speed at buhay na buhay para mag-mala-bagyo sa kwarto.
+def test_fan_program():
+    print("\n[ INITIATING GLOBAL COOLING PROTOCOL... ]\n")
+    
+    hurricane_mode_fan = Fan()
+    hurricane_mode_fan.set_speed(Fan.FAST)
+    hurricane_mode_fan.set_radius(10.0)
+    hurricane_mode_fan.set_color("yellow")
+    hurricane_mode_fan.set_on(True)
